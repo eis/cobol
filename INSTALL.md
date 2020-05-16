@@ -18,11 +18,37 @@ set COB_MAIN_DIR=%~dp0..\
 > set-cobol-env
 ```
 
-## Compiling and running a program
+### Linux
 
+```
+$ wget http://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.0/gnucobol-3.0-rc1.tar.gz
+$ tar xvf gnucobol-3.0-rc1.tar.gz
+$ cd gnu-cobol-3.0-rc1
+$ ./configure
+$ make
+$ make check
+$ sudo make install
+$ sudo ldconfig
+```
+
+and to fix libcob.so.4 error
+
+```
+$ sudo vim /etc/ld.so.conf.d/gnu-cobol-3.0.conf
+/usr/local/lib
+
+$ sudo ldconfig
+```
+
+## Compiling and running a program
 
 ```
 > cobc -x hello.cob
 > hello
 Hello, world
 ```
+
+## See also
+
+* https://open-cobol.sourceforge.io/faq/index.html#how-do-i-install-gnucobol
+* https://davidroddick.com/lets-learn-cobol/
