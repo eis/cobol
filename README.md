@@ -1,3 +1,3 @@
 ## Cobol snippets by eis
 
-See [INSTALL.md] for instructions.
+See [INSTALL.md](INSTALL.md) for instructions.
