@@ -31,7 +31,7 @@ $ sudo make install
 $ sudo ldconfig
 ```
 
-and to fix libcob.so.4 error
+and to fix libcob.so.4 error when running a compiled binary
 
 ```
 $ sudo vim /etc/ld.so.conf.d/gnu-cobol-3.0.conf
